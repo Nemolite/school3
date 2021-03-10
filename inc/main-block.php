@@ -6,7 +6,7 @@
 <section id="hamroclass_page_block_widget-2" class="widget widget-layout2 hamroclass_page_block_widget hmc-full-widget">			<div class="about-us-wrapper" style="background-color: #f2f2f2; background-image:url();">
 				<div class="hmc-container">
 					<div class="row about-content-media-wrap">
-                    <div class="about-media-part" style="">
+                    <div class="about-media-part">
 									<figure class="page-thumbnail-wrap">
 									<img width="640" height="359" src="http://school3.local/wp-content/uploads/2021/03/unnamed.jpg" class="attachment-full size-full wp-post-image" alt="" loading="lazy">										</figure>
 			      				</div>
