@@ -25,6 +25,9 @@ get_header();
  */
 do_action( 'centurylib_breadcrumbs_section_template' );
 ?>
+<?php
+do_action( 'school3_main_block_foront_html' );
+?>
 <div id="primary" class="content-area main-content-area">
 	<main id="main" class="site-main" role="main">
 		<?php
