@@ -2,6 +2,9 @@
 /**
  * Widgets for baner
  */
+
+defined( 'ABSPATH' ) || exit;
+
 class banersWidget extends WP_Widget {
  
 	/*
