@@ -26,7 +26,6 @@ get_header();
 do_action( 'centurylib_breadcrumbs_section_template' );
 ?>
 <?php
-echo get_stylesheet_directory_uri(). '/option-tree/ot-loader.php';
 do_action( 'school3_main_block_foront_html' );
 ?>
 <div id="primary" class="content-area main-content-area">
