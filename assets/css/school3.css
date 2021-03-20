@@ -27,3 +27,7 @@
 body.right-sidebar .main-content-area {
   margin-bottom: 40px;
 }
+
+#fix-hmc-post-title a {
+  text-transform: none;
+}
