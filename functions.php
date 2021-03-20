@@ -16,6 +16,16 @@ function show($param){
 }
 
 /**
+ * Подключение OptionTree
+ */
+
+ //add_filter( 'ot_theme_mode', '__return_true' );
+ add_filter( 'ot_show_pages', '__return_true' );
+
+ require 'option-tree/ot-loader.php';
+ require 'inc/meta-boxes.php';
+ require 'inc/theme-options.php';
+/**
  * Extension scipts and styles
  */ 
 function school3_scripts_style() {
