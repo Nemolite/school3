@@ -60,4 +60,37 @@ function middle_block_foront_html() {
  * Baners
  */
 require 'inc/baners.php';
+/**
+ * Блок наши успехи (протизвольные типы записей)
+ */
+
+add_action('init', 'school3_our_successes');
+function school3_our_successes(){
+	$labels = array(
+		'name'               => 'Успехи', 
+		'singular_name'      => 'Успех', 
+		'add_new'            => 'Добавить новую',
+		'add_new_item'       => 'Добавить новый успех',
+		'edit_item'          => 'Редактировать успех',
+		'new_item'           => 'Новая успех',
+		'view_item'          => 'Посмотреть успех',
+		'search_items'       => 'Найти успех',
+		'not_found'          => 'Успехов не найдено',
+		'not_found_in_trash' => 'В корзине успехов не найдено',
+		'parent_item_colon'  => '',
+		'menu_name'          => 'Успехи'
+	  );
+	 
+	  $args = array(
+		'labels' => $labels,
+		'public' => true, // 
+		'show_ui' => true, 
+		'has_archive' => true, 
+		'menu_icon' => 'dashicons-buddicons-groups', 
+		'menu_position' => 20, 
+		'supports' => array( 'title', 'editor', 'thumbnail')
+	);	
+	register_post_type('successes', $args  );
+}
+
 ?>
