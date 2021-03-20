@@ -103,4 +103,78 @@ function school3_our_successes(){
 	register_post_type('successes', $args  );
 }
 
+/**
+ * Среднее меню
+ */
+add_action('school3_middle_menu_section','middle_menu_foront_html', 10);
+function middle_menu_foront_html() {
+	get_template_part( 'inc/middle','menu' ); 
+}
+
+/**
+ * Регистрация виджетов для среднего меню
+ */
+function school3_register_middle_menu_widgets_one(){
+	register_sidebar( array(
+		'name' => 'Среднее меню, раздел 1',
+		'id' => 'middle_menu_1',
+		'description' => 'Для первого информационного меню',
+		'before_widget' => '',
+		'after_widget' => '',
+		'before_title' => '<h4 class="widget-title"><span class="title-wrapper">',
+		'after_title' => '</span></h4>',
+	) );
+}
+add_action( 'widgets_init', 'school3_register_middle_menu_widgets_one' );
+
+function school3_register_middle_menu_widgets_two(){
+	register_sidebar( array(
+		'name' => 'Среднее меню, раздел 2',
+		'id' => 'middle_menu_2',
+		'description' => 'Для второго информационного меню',
+		'before_widget' => '',
+		'after_widget' => '',
+		'before_title' => '<h4 class="widget-title"><span class="title-wrapper">',
+		'after_title' => '</span></h4>',
+	) );
+}
+add_action( 'widgets_init', 'school3_register_middle_menu_widgets_two' );
+
+function school3_register_middle_menu_widgets_three(){
+	register_sidebar( array(
+		'name' => 'Среднее меню, раздел 3',
+		'id' => 'middle_menu_3',
+		'description' => 'Для третьего информационного меню',
+		'before_widget' => '',
+		'after_widget' => '',
+		'before_title' => '<h4 class="widget-title"><span class="title-wrapper">',
+		'after_title' => '</span></h4>',
+	) );
+}
+add_action( 'widgets_init', 'school3_register_middle_menu_widgets_three' );
+
+function school3_register_middle_menu_widgets_four(){
+	register_sidebar( array(
+		'name' => 'Среднее меню, раздел 4',
+		'id' => 'middle_menu_4',
+		'description' => 'Для четвертого информационного меню',
+		'before_widget' => '',
+		'after_widget' => '',
+		'before_title' => '<h4 class="widget-title"><span class="title-wrapper">',
+		'after_title' => '</span></h4>',
+	) );
+}
+add_action( 'widgets_init', 'school3_register_middle_menu_widgets_four' );
+
+/**
+ * Регистрируем для раздела меню
+ */
+
+add_action( 'after_setup_theme', 'school3_register_nav_menu' );
+function school3_register_nav_menu() {
+	register_nav_menu( 'middele_menu_1', 'Middle Menu 1' );
+	register_nav_menu( 'middele_menu_2', 'Middle Menu 2' );
+	register_nav_menu( 'middele_menu_3', 'Middle Menu 3' );
+	register_nav_menu( 'middele_menu_4', 'Middle Menu 4' );
+}
 ?>

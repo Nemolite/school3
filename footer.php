@@ -12,6 +12,7 @@
  */
 ?>
 <?php do_action( 'school3_middle_block_section' ); ?>
+<?php do_action( 'school3_middle_menu_section' ); ?>
 </div><!-- .hmc-container -->
 </div><!-- #content -->
 <?php do_action( 'hamroclass_footer' ); ?>
