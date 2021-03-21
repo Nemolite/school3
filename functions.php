@@ -46,7 +46,7 @@ add_action( 'wp_enqueue_scripts', 'school3_scripts_style' );
 function hamroclass_footer_site_info_section() {
 ?>
 		<div class="site-info">		 
-		<p>Официальный сайт </p>	
+		<p>МУНИЦИПАЛЬНОЕ БЮДЖЕТНОЕ ОБЩЕОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ "СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА №3" ГОРОДА ШУМЕРЛИ ЧУВАШСКОЙ РЕСПУБЛИКИ</p>	
 		</div><!-- .site-info -->
 <?php }
 
@@ -102,6 +102,31 @@ function school3_our_successes(){
 	);	
 	register_post_type('successes', $args  );
 }
+
+/**
+ * Средний слайдер  
+ */
+add_action('school3_middle_slider_section','middle_slider_section', 10);
+function middle_slider_section() {
+	get_template_part( 'inc/middle','slider' ); 
+}
+
+function school3_register_middle_slider_widgets(){
+	register_sidebar( array(
+		'name' => 'Slider baners',
+		'id' => 'middle-slider-banners',
+		'description' => 'Банеры рядом со слайдером',
+		'before_widget' => '',
+		'after_widget' => '',
+		'before_title' => '<h4 class="widget-title"><span class="title-wrapper">',
+		'after_title' => '</span></h4>',
+	) );
+}
+add_action( 'widgets_init', 'school3_register_middle_slider_widgets' );
+
+
+
+
 
 /**
  * Среднее меню

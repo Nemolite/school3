@@ -31,3 +31,24 @@ body.right-sidebar .main-content-area {
 #fix-hmc-post-title a {
   text-transform: none;
 }
+
+/**
+ * Средний слайдер
+ */
+.middle-slider {
+  width: 100%;
+  height: 500px;
+}
+
+.middle-slider__images {
+  float: left;
+  width: 70%;
+  height: 500px;
+  padding-right: 20px;
+}
+
+.middle-slider__banners {
+  float: left;
+  width: 29.8%;
+  height: 500px;
+}
