@@ -52,3 +52,50 @@ body.right-sidebar .main-content-area {
   width: 29.8%;
   height: 500px;
 }
+
+/**
+ * Яндекс карты
+ */
+ .middle-yandex {
+  width: 100%;
+  height: 500px;
+}
+
+.middle-yandex__images {
+  float: left;
+  width: 70%;
+  height: 500px;
+  padding-right: 20px;
+  border:1px solid red;
+}
+
+.middle-yandex__banners {
+  float: left;
+  width: 29.8%;
+  height: 500px;
+}
+
+.section-title-doc {
+  font-size: 30px;
+  font-weight: 500;  
+  margin-bottom: 30px;
+  padding-bottom: 10px;  
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1;
+}
+
+.section-title-doc span:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 20px;
+  height: 2px;
+  background-color: #ed9532;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
