@@ -26,8 +26,10 @@ if($hamroclass_footer_layout=='column_three' || $hamroclass_footer_layout=='colu
 ?>
 <div id="mid-footer" class="hamroclass-main-footer footer-widgets-wrapper footer_<?php echo esc_attr( $hamroclass_footer_layout ); ?> hmc-clearfix">
     <div class="hmc-container">
-        <div class="footer-widgets-area hmc-clearfix">
+    <h2 class="section-title-doc"><span class="title-wrapper">Документация</span></h2> 
+        <div class="footer-widgets-area hmc-clearfix">       
             <div class="hmc-footer-widget-wrapper hmc-column-wrapper hmc-clearfix">
+             
           		<div class="hmc-footer-widget widget-area wow fadeInLeft <?php echo esc_attr($footer_widget_area_class); ?>" data-wow-duration="0.5s">
           			<?php dynamic_sidebar( 'middle_menu_1' ); ?>
           		</div>

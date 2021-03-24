@@ -110,6 +110,9 @@ add_action('school3_middle_slider_section','middle_slider_section', 10);
 function middle_slider_section() {
 	get_template_part( 'inc/middle','slider' ); 
 }
+/**	
+ * Банеры рядом со слайдером
+ */
 
 function school3_register_middle_slider_widgets(){
 	register_sidebar( array(
@@ -123,10 +126,6 @@ function school3_register_middle_slider_widgets(){
 	) );
 }
 add_action( 'widgets_init', 'school3_register_middle_slider_widgets' );
-
-
-
-
 
 /**
  * Среднее меню
@@ -202,4 +201,28 @@ function school3_register_nav_menu() {
 	register_nav_menu( 'middele_menu_3', 'Middle Menu 3' );
 	register_nav_menu( 'middele_menu_4', 'Middle Menu 4' );
 }
+
+/**
+ * Блок яндекс карты 
+ */
+add_action('school3_yandex_map_section','yandex_map_section', 10);
+function yandex_map_section() {
+	get_template_part( 'inc/middle','yandex' ); 
+}
+/**	
+ * Банеры рядом с блоком яндекс карты
+ */
+
+function school3_register_yandex_map_widgets(){
+	register_sidebar( array(
+		'name' => 'Yandex Map baners',
+		'id' => 'middle-yandex-map-banners',
+		'description' => 'Банеры рядом с блоком яндекс карты',
+		'before_widget' => '',
+		'after_widget' => '',
+		'before_title' => '<h4 class="widget-title"><span class="title-wrapper">',
+		'after_title' => '</span></h4>',
+	) );
+}
+add_action( 'widgets_init', 'school3_register_yandex_map_widgets' );
 ?>
