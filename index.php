@@ -24,6 +24,7 @@ get_header();
  * @since 1.0.0
  */
 do_action( 'centurylib_breadcrumbs_section_template' );
+do_action( 'school3_news_discription_html' );
 ?>
 <?php
 do_action( 'school3_main_block_foront_html' );
