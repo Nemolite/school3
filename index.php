@@ -15,7 +15,6 @@
  */
 get_header();
 
-
 /*
  * centurylib_breadcrumbs_section_template - hook
  *
