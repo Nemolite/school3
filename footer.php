@@ -14,6 +14,7 @@
 <?php do_action( 'school3_middle_block_section' ); ?>
 <?php do_action( 'school3_middle_slider_section' ); ?>
 <?php do_action( 'school3_middle_menu_section' ); ?>
+<?php do_action( 'school3_middle_baners_section' ); ?>
 <?php do_action( 'school3_yandex_map_section' ); ?>
 </div><!-- .hmc-container -->
 </div><!-- #content -->
