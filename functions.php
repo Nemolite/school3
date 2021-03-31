@@ -59,6 +59,17 @@ function school3_main_block_foront_html() {
 }
 
 /**
+ * Новости 
+ */
+add_action('school3_news_discription_html','news_discription_html', 20);
+function news_discription_html() {
+?>	
+<h2 class="section-title-doc"><span class="title-wrapper">Новости</span></h2> 
+<?php
+}
+
+
+/**
  * The middle block 
  */
 add_action('school3_middle_block_section','middle_block_foront_html', 10);
@@ -201,6 +212,59 @@ function school3_register_nav_menu() {
 	register_nav_menu( 'middele_menu_3', 'Middle Menu 3' );
 	register_nav_menu( 'middele_menu_4', 'Middle Menu 4' );
 }
+
+/**
+ * Блок средних банеров
+ */
+add_action('school3_middle_baners_section','middle_baners_section', 10);
+function middle_baners_section() {
+	get_template_part( 'inc/middle','baners' ); 
+}
+/**	
+ * Банеры внизу документов и выше яндекс карт
+ */
+
+function school3_register_middle_baners_left_widgets(){
+	register_sidebar( array(
+		'name' => 'Middle baners left',
+		'id' => 'middle-banners-left',
+		'description' => 'Банеры внизу документов и выше яндекс карт',
+		'before_widget' => '',
+		'after_widget' => '',
+		'before_title' => '<h4 class="widget-title"><span class="title-wrapper">',
+		'after_title' => '</span></h4>',
+	) );
+}
+add_action( 'widgets_init', 'school3_register_middle_baners_left_widgets' );
+
+
+function school3_register_middle_baners_center_widgets(){
+	register_sidebar( array(
+		'name' => 'Middle baners center',
+		'id' => 'middle-banners-center',
+		'description' => 'Банеры внизу документов и выше яндекс карт',
+		'before_widget' => '',
+		'after_widget' => '',
+		'before_title' => '<h4 class="widget-title"><span class="title-wrapper">',
+		'after_title' => '</span></h4>',
+	) );
+}
+add_action( 'widgets_init', 'school3_register_middle_baners_center_widgets' );
+
+function school3_register_middle_baners_right_widgets(){
+	register_sidebar( array(
+		'name' => 'Middle baners right',
+		'id' => 'middle-banners-right',
+		'description' => 'Банеры внизу документов и выше яндекс карт',
+		'before_widget' => '',
+		'after_widget' => '',
+		'before_title' => '<h4 class="widget-title"><span class="title-wrapper">',
+		'after_title' => '</span></h4>',
+	) );
+}
+add_action( 'widgets_init', 'school3_register_middle_baners_right_widgets' );
+
+
 
 /**
  * Блок яндекс карты 
