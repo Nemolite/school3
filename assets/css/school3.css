@@ -99,3 +99,17 @@ body.right-sidebar .main-content-area {
   -o-transform: translateX(-50%);
   transform: translateX(-50%);
 }
+
+/* page-news*/
+
+.news__block {
+  width: 100%;
+  height: auto;
+  border: 1px dotted #0f233a;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+
+.news__block h5{
+  font-size: 16px;
+}
