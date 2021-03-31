@@ -289,4 +289,17 @@ function school3_register_yandex_map_widgets(){
 	) );
 }
 add_action( 'widgets_init', 'school3_register_yandex_map_widgets' );
+
+/**	
+ * Страница новостей, полный список
+ */
+
+add_filter( 'template_include', 'page_news' );
+function page_news( $template ) {
+	if( is_page('page-news') ){
+		if ( $new_template = locate_template( array( 'inc/page-news.php' ) ) )
+			return $new_template ;
+	}
+	return $template;
+} 
 ?>
