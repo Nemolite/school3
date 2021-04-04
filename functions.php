@@ -211,6 +211,8 @@ function school3_register_nav_menu() {
 	register_nav_menu( 'middele_menu_2', 'Middle Menu 2' );
 	register_nav_menu( 'middele_menu_3', 'Middle Menu 3' );
 	register_nav_menu( 'middele_menu_4', 'Middle Menu 4' );
+
+	register_nav_menu( 'global_menu', 'Global Menu' );
 }
 
 /**
@@ -342,4 +344,6 @@ function pagination($pages = '', $range = 4)
          echo "</div>\n";
      }
 }
+
+
 ?>
