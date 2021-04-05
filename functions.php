@@ -346,5 +346,12 @@ function pagination($pages = '', $range = 4)
      }
 }
 
+/**	
+ * Футер (Ссылки на сайт разрабочика)
+ */
+function school3_link_web_developer_site(){	
+	get_template_part( 'inc/footer','link' ); 
+}
+add_action( 'hamroclass_after_page', 'school3_link_web_developer_site' );
 
 ?>

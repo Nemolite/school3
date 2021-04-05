@@ -171,3 +171,13 @@ body.right-sidebar .main-content-area {
 }
 
 /* end Пагинация*/
+
+/*Link на сайт разрабочика*/
+
+.site-info p {
+  margin-bottom: 0px;
+}
+
+.site-info span {
+  color: #ed9532;
+}
