@@ -26,7 +26,7 @@ if($hamroclass_footer_layout=='column_three' || $hamroclass_footer_layout=='colu
 ?>
 <div id="mid-footer" class="hamroclass-main-footer footer-widgets-wrapper footer_<?php echo esc_attr( $hamroclass_footer_layout ); ?> hmc-clearfix">
     <div class="hmc-container">
-    <h2 class="section-title-doc"><span class="title-wrapper">Документация</span></h2> 
+    <h2 class="section-title-doc"><span class="title-wrapper" id="link_doc">Документация</span></h2> 
         <div class="footer-widgets-area hmc-clearfix">       
             <div class="hmc-footer-widget-wrapper hmc-column-wrapper hmc-clearfix">
              

@@ -9,7 +9,7 @@ if( is_front_page() ) {
 
 <div class="middle-slider">
     <div class="middle-slider__images">
-    <?php echo do_shortcode('[metaslider id="50"]'); ?>
+    <?php echo do_shortcode('[metaslider id="50"]'); ?> <!-- 22 -->
     </div><!-- class="middle-slider__images" -->
     <div class="middle-slider__banners">
     <?php dynamic_sidebar( 'middle-slider-banners' ); ?>

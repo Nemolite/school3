@@ -10,7 +10,7 @@ if( is_front_page() ) {
 <section id="hamroclass_featured_posts-2" class="widget widget-layout2 hamroclass_featured_posts hmc-full-widget">            
   
                 <div class="hmc-block-wrapper featured-posts hmc-clearfix">               
-                    <h2 class="section-title"><span class="title-wrapper">Наши успехи</span></h2>                    
+                    <h2 class="section-title"><span class="title-wrapper" id="link_middle_block">Наши успехи</span></h2>                    
                           <div class="hmc-featured-posts-wrapper">
 
 
