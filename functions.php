@@ -214,6 +214,8 @@ function school3_register_nav_menu() {
 
 	register_nav_menu( 'global_menu', 'Global Menu' );
 	register_nav_menu( 'after_global_menu', 'After Global Menu' );
+
+	register_nav_menu( 'museum', 'Museum' );
 }
 
 /**
@@ -353,5 +355,22 @@ function school3_link_web_developer_site(){
 	get_template_part( 'inc/footer','link' ); 
 }
 add_action( 'hamroclass_after_page', 'school3_link_web_developer_site' );
+
+/**	
+ * Сайтбар для школьного музея
+ */
+
+function school3_register_museum_widgets(){
+	register_sidebar( array(
+		'name' => 'Museum',
+		'id' => 'museum',
+		'description' => 'Сайтбар для музея',
+		'before_widget' => '',
+		'after_widget' => '',
+		'before_title' => '<h4 class="widget-title"><span class="title-wrapper">',
+		'after_title' => '</span></h4>',
+	) );
+}
+add_action( 'widgets_init', 'school3_register_museum_widgets' );
 
 ?>

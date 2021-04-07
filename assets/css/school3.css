@@ -181,3 +181,61 @@ body.right-sidebar .main-content-area {
 .site-info span {
   color: #ed9532;
 }
+
+/* Museum */
+.museum-content {
+  width: 100%;
+  height: auto; 
+}
+
+.museum-content-title {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1;
+}
+
+.museum-content-info {
+  width: 70%;
+  height: auto;
+  float: left; 
+}
+
+.museum-content-img {
+  width: 100%;
+  height: auto; 
+  padding: 40px;
+}
+
+.museum-content-img-wrapper {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.museum-content-text {
+  width: 100%;
+  height: auto;  
+  padding: 40px;
+}
+
+.museum-content-news {
+  width: 100%;
+  height: auto; 
+  padding: 40px;
+}
+
+.museum-content-sidebar {
+  width: 29%;
+  height: auto;
+  float: left;  
+}
+
+.museum-content-area {
+  float: left;
+  width: 100%;
+}
+
