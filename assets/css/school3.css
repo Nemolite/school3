@@ -239,3 +239,25 @@ body.right-sidebar .main-content-area {
   width: 100%;
 }
 
+/* Announce */
+
+.annouce-section {
+  width: 100%;
+  height: auto; 
+  margin-top: 20px;
+}
+
+.annouce-content {
+  width: 63%;
+  height: auto;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border: 1px solid #0f233a;
+}
+
+.annouce-content p {
+  text-indent:5%;
+  font-size: 16px;
+}

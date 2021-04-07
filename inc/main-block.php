@@ -13,7 +13,7 @@ if( is_front_page() ) {
 			      				</div>
 							<div class="about-content-part has-thumbnail">
 									<div class="about-content-inner">
-										<div class="about-block-title" id="link_news">
+										<div class="about-block-title">
 											<h2><?php echo ot_get_option( 'welcome_title' ); ?></h2>
 										</div>
 										<p>
@@ -26,4 +26,5 @@ if( is_front_page() ) {
 				</div>
 			</div>
 </section>
+<?php get_template_part( 'inc/block', 'announcement' );  ?>
 <?php } ?>
