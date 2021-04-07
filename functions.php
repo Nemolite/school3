@@ -64,7 +64,7 @@ function school3_main_block_foront_html() {
 add_action('school3_news_discription_html','news_discription_html', 20);
 function news_discription_html() {
 ?>	
-<h2 class="section-title-doc"><span class="title-wrapper">Новости</span></h2> 
+<h2 class="section-title-doc"><span class="title-wrapper" id="link_news">Новости</span></h2> 
 <?php
 }
 
