@@ -48,6 +48,10 @@ function custom_theme_options() {
 				'id'    => 'annonce',
 				'title' => __( 'Объявление', 'theme-text-domain' ),
 			),
+			array(
+				'id'    => 'museum',
+				'title' => __( 'Музей', 'theme-text-domain' ),
+			),
 		),
 		'settings'        => array(
 			array(
@@ -127,6 +131,38 @@ function custom_theme_options() {
 				'condition'    => '',
 				'operator'     => 'and',
 			),
+
+			array(
+				'id'           => 'museum_upload',
+				'label'        => __( 'Загрузка изображения', 'theme-text-domain' ),
+				'desc'         => sprintf( __( 'Изображение на главную страницу музея', 'theme-text-domain' ), apply_filters( 'ot_upload_text', __( 'Send to OptionTree', 'theme-text-domain' ) ), 'FTP' ),
+				'std'          => '',
+				'type'         => 'upload',
+				'section'      => 'museum',
+				'rows'         => '',
+				'post_type'    => '',
+				'taxonomy'     => '',
+				'min_max_step' => '',
+				'class'        => '',
+				'condition'    => '',
+				'operator'     => 'and',
+			),
+			array(
+				'id'           => 'museum_textarea',
+				'label'        => __( 'Текст на страницу музея', 'theme-text-domain' ),
+				'desc'         => sprintf( __( 'Текст', 'theme-text-domain' ), '<code>wpautop</code>', '<code>media_buttons</code>', '<code>tinymce</code>', '<code>quicktags</code>' ),
+				'std'          => '',
+				'type'         => 'textarea',
+				'section'      => 'museum',
+				'rows'         => '15',
+				'post_type'    => '',
+				'taxonomy'     => '',
+				'min_max_step' => '',
+				'class'        => '',
+				'condition'    => '',
+				'operator'     => 'and',
+			),
+
 			
 		),
 	);
