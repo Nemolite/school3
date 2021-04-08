@@ -261,3 +261,21 @@ body.right-sidebar .main-content-area {
   text-indent:5%;
   font-size: 16px;
 }
+
+.block_bvi {
+  width: 100%;
+  height: 70px;  
+}
+
+html body a.bvi-link-widget, html body a.bvi-link-shortcode {
+  -webkit-transition: background-color .2s ease-out;
+  transition: background-color .2s ease-out;
+  cursor: pointer;
+  border-radius: 2px;
+  display: inline-block;
+  padding: 5px 10px;
+  vertical-align: middle;
+  text-decoration: none;
+  width: 100%;
+  text-align: center;
+}
