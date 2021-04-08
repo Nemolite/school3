@@ -17,7 +17,7 @@ if( is_front_page() ) {
 <?php
 $args = array(
     'post_type' =>'successes',
-    'order' => 'ASC',
+    'order' => 'DESC',
 	'posts_per_page' => 4,
 );
 $query = new WP_Query( $args );
