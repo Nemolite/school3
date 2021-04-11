@@ -52,6 +52,11 @@ function custom_theme_options() {
 				'id'    => 'museum',
 				'title' => __( 'Музей', 'theme-text-domain' ),
 			),
+
+			array(
+				'id'    => 'contact',
+				'title' => __( 'Контакты', 'theme-text-domain' ),
+			),
 		),
 		'settings'        => array(
 			array(
@@ -162,6 +167,23 @@ function custom_theme_options() {
 				'condition'    => '',
 				'operator'     => 'and',
 			),
+			array(
+				'id'           => 'contact_textarea',
+				'label'        => __( 'Наши контакты', 'theme-text-domain' ),
+				'desc'         => sprintf( __( 'Текст не более 50-70 слов', 'theme-text-domain' ), '<code>wpautop</code>', '<code>media_buttons</code>', '<code>tinymce</code>', '<code>quicktags</code>' ),
+				'std'          => '',
+				'type'         => 'textarea',
+				'section'      => 'contact',
+				'rows'         => '15',
+				'post_type'    => '',
+				'taxonomy'     => '',
+				'min_max_step' => '',
+				'class'        => '',
+				'condition'    => '',
+				'operator'     => 'and',
+			),
+
+			
 
 			
 		),
