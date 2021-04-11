@@ -212,6 +212,10 @@ function school3_register_nav_menu() {
 	register_nav_menu( 'middele_menu_3', 'Middle Menu 3' );
 	register_nav_menu( 'middele_menu_4', 'Middle Menu 4' );
 
+	register_nav_menu( 'middele_menu_11', 'Middle Menu 11' );
+	register_nav_menu( 'middele_menu_21', 'Middle Menu 21' );
+	register_nav_menu( 'middele_menu_31', 'Middle Menu 31' );
+
 	register_nav_menu( 'global_menu', 'Global Menu' );
 	register_nav_menu( 'after_global_menu', 'After Global Menu' );
 
