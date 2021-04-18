@@ -3,6 +3,11 @@
  * Средний банерный ряд
  */
 ?>
+<?php 
+defined( 'ABSPATH' ) || exit;  
+
+if( is_front_page() ) {
+?>
 <div class="middle-baners">
 
     <div class="middle-baners-left">
@@ -15,3 +20,4 @@
     <?php dynamic_sidebar( 'middle-banners-right' ); ?>
     </div>
 </div>
+<?php } ?>
