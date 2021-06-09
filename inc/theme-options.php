@@ -74,6 +74,43 @@ function custom_theme_options() {
 				'condition'    => '',
 				'operator'     => 'and',
 			),
+
+			array(
+				'id'           => 'welcome_width',
+				'label'        => __( 'Ширина изображения', 'theme-text-domain' ),
+				'desc'         => __( 'Сейчас - 640, можете изменить', 'theme-text-domain' ),
+				'std'          => '',
+				'type'         => 'text',
+				'section'      => 'welcome',
+				'rows'         => '',
+				'post_type'    => '',
+				'taxonomy'     => '',
+				'min_max_step' => '',
+				'class'        => '',
+				'condition'    => '',
+				'operator'     => 'and',
+			),
+
+
+			array(
+				'id'           => 'welcome_height',
+				'label'        => __( 'Высота изображения', 'theme-text-domain' ),
+				'desc'         => __( 'Сейчас - 359, можете изменить', 'theme-text-domain' ),
+				'std'          => '',
+				'type'         => 'text',
+				'section'      => 'welcome',
+				'rows'         => '',
+				'post_type'    => '',
+				'taxonomy'     => '',
+				'min_max_step' => '',
+				'class'        => '',
+				'condition'    => '',
+				'operator'     => 'and',
+			),
+
+
+
+
 			array(
 				'id'           => 'welcome_upload',
 				'label'        => __( 'Загрузка изображения', 'theme-text-domain' ),

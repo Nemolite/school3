@@ -88,8 +88,8 @@ function school3_welcome(){
 
 add_action('hamroclass_main_header_section','school3_main_block_foront_html', 20);
 function school3_main_block_foront_html() {
-	// get_template_part( 'inc/main', 'block' ); 
-	get_template_part( 'inc/welcome', 'block' ); 
+	get_template_part( 'inc/main', 'block' ); 
+	//get_template_part( 'inc/welcome', 'block' ); 
 }
 
 /**
