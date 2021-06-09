@@ -57,7 +57,7 @@ function hamroclass_footer_site_info_section() {
 add_action('init', 'school3_welcome');
 function school3_welcome(){
 	$labels = array(
-		'name'               => 'Приветствие', 
+		'name'               => 'Приветствие (Отключен)', 
 		'singular_name'      => 'Приветствие', 
 		'add_new'            => 'Добавить приветствие',
 		'add_new_item'       => 'Добавить новое приветствие',
