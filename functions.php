@@ -53,9 +53,43 @@ function hamroclass_footer_site_info_section() {
 /**
  * Main a block
  */
+
+add_action('init', 'school3_welcome');
+function school3_welcome(){
+	$labels = array(
+		'name'               => 'Приветствие', 
+		'singular_name'      => 'Приветствие', 
+		'add_new'            => 'Добавить приветствие',
+		'add_new_item'       => 'Добавить новое приветствие',
+		'edit_item'          => 'Редактировать приветствие',
+		'new_item'           => 'Новое приветствие',
+		'view_item'          => 'Посмотреть приветствие',
+		'search_items'       => 'Найти приветствие',
+		'not_found'          => 'Приветствие не найдено',
+		'not_found_in_trash' => 'В корзине приветствий не найдено',
+		'parent_item_colon'  => '',
+		'menu_name'          => 'Приветствие'
+	  );
+	 
+	  $args = array(
+		'labels' => $labels,
+		'public' => true, 
+		'show_ui' => true, 
+		'has_archive' => true, 
+		'menu_icon' => 'dashicons-media-document', 
+		'menu_position' => 20, 
+		'supports' => array( 'title', 'editor')
+	);	
+	register_post_type('welcome', $args  );
+}
+
+
+
+
 add_action('hamroclass_main_header_section','school3_main_block_foront_html', 20);
 function school3_main_block_foront_html() {
-	get_template_part( 'inc/main', 'block' ); 
+	// get_template_part( 'inc/main', 'block' ); 
+	get_template_part( 'inc/welcome', 'block' ); 
 }
 
 /**
