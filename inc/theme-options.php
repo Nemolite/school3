@@ -94,7 +94,7 @@ function custom_theme_options() {
 
 			array(
 				'id'           => 'welcome_height',
-				'label'        => __( 'Высота изображения', 'theme-text-domain' ),
+				'label'        => __( 'Высота изображения. Внимание, изображение по высоте корректируется автоматический, если некорретно', 'theme-text-domain' ),
 				'desc'         => __( 'Сейчас - 359, можете изменить', 'theme-text-domain' ),
 				'std'          => '',
 				'type'         => 'text',
